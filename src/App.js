@@ -26,9 +26,14 @@ class App extends Component {
   }
 
   updateInventory(newProduct){
-    console.log(newProduct)
     this.setState({
-      inventory: {...this.state.inventory, newProduct}
+      inventory: [...this.state.inventory, newProduct[0]]
+    })
+  }
+
+  deleteProduct(){
+    this.setState({
+      inventory: [...this.state.inventory]
     })
   }
   
@@ -36,7 +41,7 @@ class App extends Component {
   render(){
     return(
       <div>
-        <Dashboard inventory={this.state.inventory}/>
+        <Dashboard inventory={this.state.inventory} deleteProduct={this.deleteProduct}/>
         <NewProduct updateInventory={this.updateInventory} />
       </div>
     )

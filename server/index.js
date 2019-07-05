@@ -12,6 +12,8 @@ app.get('/api/inventory', Controller.getAll)
 
 app.post('/api/inventory', Controller.create)
 
+app.delete('/api/inventory/:id', Controller.delete)
+
 massive(CONNECTION_STRING)
 .then(db => {
     app.set('db', db)
