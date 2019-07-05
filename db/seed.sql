@@ -1,0 +1,3 @@
+insert into products (name, price, image_url)
+values ('shirt', 10.00, 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT2-i-OJhZh0LhUHnLNuyfyH4Ds2zB2U_lRV3-PwGbg1k6jMqTWakcWGi-yYfiBTTqfj6Bx1X6RdjvHORLCuqKvlHjHcRKlvwW6eCo0roZx_5DIl_VnOXZI&usqp=CAc'),
+('shorts', 20.00, 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTblH3omssFpbEtYG24xZ4YlEfgdZIAetZC1O0z_D3s42DCwLS74ZxJ9SAQRRDiFE1S_iPT22iVnMj_7F_72jT7HTv_Hb6k9o4gmgHf1yo&usqp=CAc');
